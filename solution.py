@@ -50,7 +50,7 @@ diag2_units = [[r + c for r, c in zip(rows[::-1], cols)]]
 
 square_units = [cross(rs, cs) for rs in ('ABC','DEF','GHI') for cs in ('123','456','789')]
 if diagonal:
-    unitlist = diag1_units + diag2_units + square_units
+    unitlist = diag1_units + diag2_units + row_units + column_units + square_units
 else:
     unitlist = row_units + column_units + square_units
 
