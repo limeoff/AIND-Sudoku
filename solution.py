@@ -31,6 +31,7 @@ def naked_twins(values):
 
     # Find all instances of naked twins
     # Eliminate the naked twins as possibilities for their peers
+    # TODO implement naked twins function
 
 def cross(A, B):
     """
@@ -150,6 +151,7 @@ def reduce_puzzle(values):
 def search(values):
     "Using depth-first search and propagation, create a search tree and solve the sudoku."
     # First, reduce the puzzle using the previous function
+
     values = reduce_puzzle(values)
 
     if values is False:
